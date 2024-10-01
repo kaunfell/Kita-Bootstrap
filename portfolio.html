@@ -5,11 +5,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="./resources/css/style.css" rel="stylesheet">
+        <link href="./resources/css/portfolio.css" rel="stylesheet">
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     </head>
     <body>
     
+<!-- vines -->
+<div class="vineUp">   
+</div>
 
+<div class="vineDown">   
+</div>
+
+
+<!-- flag/language -->
+<div class="flag">
+<div class=" btn dropdown language">
+
+  <p class="btn-group bg-transparent  " aria-expanded="false">
+    lang.
+  </p>
+      <span class="visually-hidden">Toggle Dropend</span>
+
+      
+    <a data-bs-toggle="dropdown">
+     <img src="resources/img/img_flg_eng.png"  class=""/>
+    </a>
+    <ul class="dropdown-menu  bg-transparent ">
+     <li class="dropdown-item bg-transparent">
+        <img src="resources/img/img_flg_jap.png" class=""/>
+     </li>
+    </ul>
+</div>
+</div>
+
+
+
+
+<!-- nav -->
 <nav class="navbar ">
   <div class="container-fluid   ">
     <div class="mx-auto navImg">
@@ -19,13 +52,13 @@
     <div class="navbar " >
       <ul class="navbar-nav mx-auto   d-flex flex-row justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active newsB" aria-current="page" href="index.html">News</a>
+          <a class="nav-link  newsB" aria-current="page" href="index.html">News</a>
         </li>
 
 
 
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="portfolio.html">Portfolio</a>
+          <a class="nav-link active " aria-current="page" href="portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " aria-current="page" href="bio.html">Biography</a>
@@ -36,12 +69,109 @@
       </ul>
     </div>
 
-    <div class="border border-success mx-auto">
+    <div class=" mx-auto">
         <img src="./resources/img/img_banner_naviline.png" alt="">
     </div>
 
   </div>
 </nav>
+
+
+
+
+
+
+   <!-- songs and albums --> 
+   <div class="portfolioSection  container">    
+        <div class="portfolioContainer">
+
+
+        <div class="first">
+            <div class="player">
+                <div class="textContainer">
+                    <p class="nowPlayingText">Now playing:</p>
+                    <div class=songElements>
+                    <p  class="TheYear" class="songName" data-year="2024">-</p>
+                    <p  class="TheAlbum" class="songName">-</p> <!--2024: License Album: Realms-->
+                    </div>
+                </div>
+                <audio controls class="audioPlayer">
+                    <source   src="" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                
+            </div>
+             <div class="songExpContainer">
+                <div class="upperSongExp">
+                    <p class="TheSong otherSongName"></p>
+                    <p class="TheAdjective adjectives"></p>
+                    <img src="./resources/img/img_title_about.png" alt="about title">
+                </div>
+             <p class="songExp ">
+             
+              </p>
+            </div>
+            <div class="songsContainer">
+                <!--div class="popOutDiv">
+                <p class="otherSongName"></p>
+                <p class="adjectives"></p>
+                </div-->
+
+
+
+            </div>
+        </div>
+
+        <div class="second">
+            <div  class="albumImg">
+                <img class="leftArrow" src="./resources/img/img_arrow_L.png" alt="left arrow">
+                <img class="leftAlbum" src="" alt="album cover">
+                <img class="nowAlbum" src="" alt="album cover">
+                <img class="rightAlbum" src="" alt="album cover">
+                <img class="rightArrow" src="./resources/img/img_arrow_R.png" alt="right arrow">
+            </div>
+            <div class="albumName">
+                <p  class=TheYear data-year="2024"></p>
+                <p  class=TheAlbum ></p><!--2024: License Album: Realms-->
+            </div>
+            <div class="albumAbout">
+                <img  src="./resources/img/img_title_about.png" alt="about title">
+                <p class="albumAboutP">--</p>
+            </div>
+        </div>
+        
+        <div class="third">
+            <div class="albumList">
+                <img src="./resources/img/img_title_select.png" alt="select title">
+                <h5 class="albumYear" data-year="2024">2024</h5>
+                <p class="TheAlbumName" data-album-id="realms">Licence Album: Realms</p><!--class=TheAlbum  2024: License Album: Realms-->
+                <p class="TheAlbumName" data-album-id="oracle">Oracle Theme</p> <!-- class=TheSong -->
+            </div>
+        </div>
+
+
+
+
+        </div> <!-- porfolioContainer end here-->
+
+  </div>
+  
+
+
+
+
+
+<!-- tree -->
+<div class="container-fluid mt-4">
+    <div class="container-fluid text-center  tree mx-auto">
+        <!--img src="./resources/img/img_footer_tree.png" alt=""-->
+     
+    </div>
+</div>
+
+
+
+    <script src="./resources/js/Portfolio.js" ></script>
 
 
 
