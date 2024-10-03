@@ -22,8 +22,8 @@ const albums = {
                 adjectives: ['adjective1', 'adj2', 'adj3'],
                 explanation: "super cool . Mus mauris vitae ultricies leo integer malesuada. \
                 Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim.\
-                Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim. \
-                Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim.  "
+                THESTTTTT. \
+                  "
             },
             {
                 name: 'mecha2',

@@ -5,7 +5,11 @@ body, html{
     background-attachment: fixed;
     font-size: 16px;
    
-    min-height: 100%;
+    min-height: 100vh !important;
+    
+    display: flex;
+    flex-direction: column;
+
 }
 
 /*Vines*/
@@ -109,13 +113,16 @@ width: 140px;
     margin-top: 12.4vh;
 }
 
+.navi{
+    height: 500px;
+    height: 35vh;
+    
+}
+
 .navbar{
     width: 100%;
+
     
-
-
-
-
     
 }
 
@@ -208,6 +215,22 @@ nav li a::before {
 
 }
 
+/*section test*/
+.newsSection{
+    height: 100%;
+    position: relative;
+
+
+              height:calc(100vh - 35vh); /* Full height of the viewport */
+            display: flex;
+            flex-direction: column;
+    border: 2px solid red;
+    background-color: #a19e9f;
+}
+
+
+
+
 
 .newsContainer{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -221,7 +244,8 @@ nav li a::before {
 
     margin-top: 6vh;
 
-    
+    border: 2px solid gold;
+   
 }
 
 .newsContainer h5{
@@ -231,6 +255,7 @@ nav li a::before {
     text-align: right;
     font-size: 14.49px;
 
+    
 }
 
 .newsContainer h3{
@@ -277,13 +302,15 @@ nav li a::before {
     width: 100%;
  
 
-    /*maybe*/
-    min-height: 180px;
-
-
-    position: sticky;
-    bottom: 0px;
+    /*maybe min-height: 180px;*/
     
+    min-height: 180px;
+   flex: 1;
+    
+
+    border: 2px solid gold;
+
+      
 }
 
 
@@ -327,13 +354,21 @@ nav li a::before {
 
 
 /*BIO*/
+.bioSection{
+   
+    height:calc(100vh - 35vh); /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    background-color: #929090;
+}
 
 
 .bioContainer{
     margin-top: 3.9vh; 
     background-color: #ffffff;
     opacity: .7;
-    min-height: 69vh;
+    min-height: 35vh;
 
 
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -391,6 +426,16 @@ nav li a::before {
 
 /*CONTACT*/
 
+.contactSection{
+    background-color: #929090;
+    height: calc(100vh - 35vh);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    background-color: #929090;
+}
+
+
 .contactContainer{
     margin-top: 3.9vh;
 
@@ -401,6 +446,7 @@ nav li a::before {
     min-height: 630px;
    
     position: relative;
+
 }
 
 .contactContainer span h4{
