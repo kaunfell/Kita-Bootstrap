@@ -4,7 +4,8 @@
     
     height: 100%;
     min-height: 69vh;
-    min-width: 71vw;
+    min-width: 100%;
+    
 
 
     padding: 0%;
@@ -44,7 +45,7 @@
 
 .portfolioContainer {
 
-    min-width: 100%;
+    min-width: 80%;
     min-height: 680px;
 
     overflow: auto;
@@ -59,10 +60,13 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     border: 2px solid brown;
 
+    min-height: 980px; /*what if there are more songs, should this be higher so it would always be one size*/
+    height: calc(100vh - 35vh);
+    overflow-x: hidden;
     
 }
 
@@ -82,13 +86,15 @@
    
 
     border:  2px solid rebeccapurple;
+    max-width: 590px;
 }
 .player{
     background-color: #ffffff;
     position: relative;
     
-    width: 591px !important;
- 
+    width: 569px ;
+    width: 475px ;
+    width: 100%;
     
     margin-top: 15px;
     margin-bottom: 0;
@@ -108,6 +114,12 @@
     justify-content: space-between;
     
     /* other styles as needed */
+
+
+
+    border: 2px solid pink;
+    height: 65px;
+    padding-top: 15px;
 }
 .nowPlayingText {
     margin-left: 19px;
@@ -116,7 +128,8 @@
     color: #979797;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
-    
+    margin-left: 5px !important;
+   
 }
 .songName {
     font-family: Arial, Helvetica, sans-serif;
@@ -132,6 +145,9 @@
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 5%;
+
+    margin-top: 4px;
+    margin-right: 5px;
 }
 
 .audioPlayer {
@@ -147,9 +163,10 @@
     background-color: #ffffff;
     text-align: center;
     
-    width: 90%;
+    width: 95%;
     max-width: 559px;
     min-height: 250px;
+    
 
     margin-top: 8px;
     
@@ -219,7 +236,7 @@
     
     text-align: center;
 
-    width: 90%;
+    width: 95%;
     max-width: 559px;
 
     margin-top: 16px;
@@ -261,7 +278,7 @@
 
     
     border:2px solid green;
-    min-width: 560px;
+    /*min-width: 560px;*/
 
 }
 
@@ -319,8 +336,11 @@
     display: flex;
     flex-direction: row;
     
+    
 
     border: 1px solid #d2d2d2;
+
+    padding-top: 10px;
 }
 
 
@@ -338,6 +358,8 @@
     border: 1px solid #d2d2d2;
 
     padding-top: 25px;
+
+    margin-bottom: 30px;
 }
 .albumAbout img {
     position: absolute;
@@ -420,6 +442,7 @@
     /*max-width: 386px;*/
     
     border: 2px solid gold;
+    
 }
 
 
@@ -446,6 +469,8 @@
     border-top: 1px solid #f3f3f3;
     border-right: 2px solid #d7d7d7;
     border-bottom: 1px solid #f3f3f3;
+
+    margin-left: 0px; 
 }
 .albumList img {
     position: absolute;
@@ -489,5 +514,16 @@
     padding-top: 0%;
     
 
+    
+}
+
+@media  (max-width: 1578px) {
+    .portfolioContainer{
+        background-color: rebeccapurple;
+    }
+    .textContainer p{
+        font-size: .9rem;
+       
+    }
     
 }
