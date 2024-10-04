@@ -15,8 +15,8 @@
     align-items: center;
     
 
-    border: 2px solid pink;
     z-index: 15;  
+    border: 2px solid rgb(222, 27, 240);
 }
 
 
@@ -62,7 +62,7 @@
     flex-direction: row;
     justify-content: center;
 
-    border: 2px solid brown;
+
 
     min-height: 980px; /*what if there are more songs, should this be higher so it would always be one size*/
     height: calc(100vh - 35vh);
@@ -79,14 +79,18 @@
 
     margin: 0%;
     margin-left: 52px ;
-
+    margin-left: 0px ;
 
     padding: 0%;
 
    
 
-    border:  2px solid rebeccapurple;
+
     max-width: 590px;
+
+    position: relative;
+    
+    
 }
 .player{
     background-color: #ffffff;
@@ -117,7 +121,7 @@
 
 
 
-    border: 2px solid pink;
+
     height: 65px;
     padding-top: 15px;
 }
@@ -163,9 +167,9 @@
     background-color: #ffffff;
     text-align: center;
     
-    width: 95%;
+    width:95%;
     max-width: 559px;
-    min-height: 250px;
+   /*min-height: 250px; */
     
 
     margin-top: 8px;
@@ -173,7 +177,9 @@
     padding: 0;
     
     border: 1px solid #d7d7d7;
-    
+
+    min-height: 150px;
+ 
 }
 
 .upperSongExp {
@@ -221,6 +227,8 @@
     text-align: left;
     
     padding-top: 25px;
+
+   
 }
 .songExpContainer img {
     position: absolute;
@@ -236,8 +244,8 @@
     
     text-align: center;
 
-    width: 95%;
-    max-width: 559px;
+    width: 90%;
+   
 
     margin-top: 16px;
     
@@ -247,6 +255,10 @@
 
     
     
+
+    top: 450px;
+    position: absolute;
+   
     
 }
 
@@ -277,12 +289,12 @@
     position: relative;
 
     
-    border:2px solid green;
+
     /*min-width: 560px;*/
 
 }
 
-.albumImg {
+.albumImg { /*this is weird back container*/
 
     /*width: 490px;*/
     width: 95%;
@@ -293,7 +305,8 @@
     margin-top: 15px;
     
     position: relative;
-
+    
+    
 }
 
 .nowAlbum {
@@ -303,23 +316,28 @@
     left: 50%; /* Center it horizontally */
     transform: translate(-50%, -50%); /* Offset the position by half its width and height to truly center it */
  
-
+    max-height: 490px;
 }
 .leftAlbum, .rightAlbum {
     position: absolute;
-    width: 410px;
-    height: 410px;
+    max-width: 410px;
+    max-height: 410px;
     top: 0;
     bottom: 0;
     margin: auto 0;
     z-index: 1;
+
+    max-width: 83%;
+    max-height: 83%;
 }
 .leftAlbum {
     right: 23%; /* Align this image to the left */
+    
 }
 
 .rightAlbum {
     left: 23%; /* Align this image to the right */
+    right: 10px;
 }
 
 .albumName {
@@ -441,7 +459,7 @@
     width: 100%;
     /*max-width: 386px;*/
     
-    border: 2px solid gold;
+
     
 }
 
@@ -471,6 +489,8 @@
     border-bottom: 1px solid #f3f3f3;
 
     margin-left: 0px; 
+
+    width: 95%;
 }
 .albumList img {
     position: absolute;
@@ -516,6 +536,20 @@
 
     
 }
+
+/*Tree*/
+
+
+
+.treeIn{
+
+   min-height: 180px;
+
+}
+
+
+
+
 
 @media  (max-width: 1578px) {
     .portfolioContainer{
