@@ -10,7 +10,14 @@ body, html{
     display: flex;
     flex-direction: column;
 
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
 }
+
+
 
 /*Vines*/
 .vineUp {
@@ -133,12 +140,12 @@ width: 140px;
     opacity: .77;
 
     
-    width: 607px;
+    width: 650px;
    
 
-    padding-right: 16px;
+ /*   padding-right: 16px;
     padding-left: -5px;
-
+*/
 
     
 }
@@ -153,7 +160,7 @@ width: 140px;
     font-size: 28.98px;
     margin-left: 10px;
     
-    
+
     
 }
 
@@ -184,13 +191,16 @@ nav li a::before {
 
 
     content: '';
+    display: none;
 }
 
 
 
 
 /* News */
-
+.container-fluid{
+    max-width: 100vw;
+}
 
 .newsContainer span h4{
     background-image: url('../img/img_section_contact.png');
@@ -326,21 +336,30 @@ nav li a::before {
 
 
 
-/*Media queries*/
+/*Media queries */
 
 @media screen and (max-width: 562px) {
+    .nav-item{
+
+        margin: auto;
+        
+    }
     .navbar-nav{
-       
+
+ 
+        width: 100%;
     }
 
     nav li a:before{
-       opacity: 0;
+       display: none;
        
     }
 
     .nav-item a{
-        font-size: 21px;
+        font-size: 22px;
 
+
+        
     }
     
     .flag {
@@ -357,6 +376,29 @@ nav li a::before {
 }
 
 
+/*643*/
+@media  screen and (max-width: 627px) {
+    nav li a:before{
+
+        display: none;
+
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+
+     }
+
+     .nav-item a{
+        margin: 15px;
+
+     }
+
+     .navbar-nav{
+
+        width: 100%;
+    }
+
+}
 
 /*BIO*/
 .bioSection{
@@ -409,7 +451,12 @@ nav li a::before {
 
 .firstCol p{
     margin-left: 25px;
+    margin-top: 18px;
   
+}
+
+.secondCol img{
+    margin-top: 18px;
 }
 
 .thirdColText p {
@@ -478,10 +525,10 @@ nav li a::before {
     font-size: 18.63px;
     line-height: 1.3;
     color: #bababa;
-    padding-top: 35px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 35px;
+   /* padding-top: 35px;
+   /* margin-left: 70px;
+    margin-right: 70px; 
+    margin-bottom: 35px; */
 
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -503,7 +550,8 @@ nav li a::before {
     padding-top: 10px;
     margin-left: 8%;
    height: auto;
-    
+
+  
 }
 .form-control {
 
@@ -558,4 +606,20 @@ form button:focus {
     outline: none;
     /*outline: 0; try*/
     box-shadow: none;
+}
+
+@media screen and (max-width: 575px) {
+    .form-label{
+        justify-content: left;
+
+        margin-left: 0px;
+    }
+
+    .form-control{
+ 
+        max-width: 95% !important;
+        
+    }
+
+
 }
