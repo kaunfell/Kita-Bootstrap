@@ -16,7 +16,7 @@
     
 
     z-index: 15;  
-    border: 2px solid rgb(222, 27, 240);
+
 }
 
 
@@ -294,7 +294,20 @@
 
 }
 
-.albumImg { /*this is weird back container*/
+
+.allAlbums{
+
+    height: 490px;
+    width: 100%;
+
+    position: relative;
+
+
+    text-align: center;
+    width: 500px;
+}
+
+albumImg { /*this is weird back container*/
 
     /*width: 490px;*/
     width: 95%;
@@ -302,33 +315,44 @@
 
     height: 490px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0px;
     
     position: relative;
     
-    
+    height: 83%;
+   
+
+
 }
 
 .nowAlbum {
     z-index: 2;
     position: absolute;
-    top: 50%; /* Center it vertically */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half its width and height to truly center it */
+  /*  top: 50%; 
+    left: 50%; 
+    */
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%); 
  
-    max-height: 490px;
+
+    max-width: 80%;
+    max-height: 90;
+
 }
 .leftAlbum, .rightAlbum {
     position: absolute;
     max-width: 410px;
     max-height: 410px;
-    top: 0;
+    top: 15px;
     bottom: 0;
-    margin: auto 0;
+    /*margin: auto 0;*/
     z-index: 1;
 
-    max-width: 83%;
-    max-height: 83%;
+   max-width: 73%;
+    max-height: 95%;
+
+
 }
 .leftAlbum {
     right: 23%; /* Align this image to the left */
@@ -338,6 +362,9 @@
 .rightAlbum {
     left: 23%; /* Align this image to the right */
     right: 10px;
+
+    
+    
 }
 
 .albumName {
@@ -553,7 +580,7 @@
 
 @media  (max-width: 1578px) {
     .portfolioContainer{
-        background-color: rebeccapurple;
+        
     }
     .textContainer p{
         font-size: .9rem;
