@@ -48,8 +48,6 @@ const albums = {
                 adjectives: ['adjektiiivvv33', 'adj2', 'adj3'],
                 explanation: "Awesome! Mus mauris vitae ultricies leo integer malesuada.\
                  Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim.\
-                 Aliquet eget sit amet tellus cras adipiscing enim.\
-                 Aliquet eget sit amet tellus cras adipiscing enim.\
                  sit. Aliquet eget sit amet tellus cras adipiscing enim."
             },
 
