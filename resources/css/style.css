@@ -51,7 +51,7 @@ body, html{
 position: fixed;
 top: 16.58% !important;
 left: 5.7%;
-z-index: 10;
+z-index: 1000 !important;
 width: 140px;
 
 
@@ -182,9 +182,13 @@ nav li a::before {
     margin-right: 10px;
     
 
-   top: 55px;
-    
+   top: 3px;
+   
 
+   display: inline-block; 
+   position: relative;
+   
+ 
 }
 
 .newsB:first-child::before {
@@ -338,16 +342,18 @@ nav li a::before {
 
 /*Media queries */
 
-@media screen and (max-width: 562px) {
+@media screen and (min-width: 360px) and (max-width: 562px) {
     .nav-item{
 
         margin: auto;
-        
+ 
     }
     .navbar-nav{
 
  
-        width: 100%;
+      /*  width: 100%;*/
+
+      
     }
 
     nav li a:before{
@@ -357,16 +363,13 @@ nav li a::before {
 
     .nav-item a{
         font-size: 22px;
-
-
-        
+        font-size: 1.3em;
+        padding: -15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     
-    .flag {
-        top: 11px !important;
-       left: 69%
-        
-    }
+
 
     .newsContainer h5{
 
@@ -397,8 +400,76 @@ nav li a::before {
 
         width: 100%;
     }
+    .flag {
+       /* top: 11px !important;*/
+      
+       
+   
+    }
 
 }
+
+/*BS breakpoint under 767px*/
+@media screen and (max-width:  645px){
+    .dropdown{
+
+        margin-left: -15px !important;
+        margin-top: -7px;
+    }
+
+    .dropdown img{
+        width: 45px !important;
+        border: 2px solid #b2b2b2;
+    }
+
+
+}
+
+@media screen and (max-width: 688px) {
+    .dropdown{
+
+        margin-left: -15px !important;
+        margin-top: -7px;
+    }
+    .navbar-nav {
+
+        opacity: 1;
+    }
+}
+
+
+
+/*BS breakpoint under*/
+@media  screen and (max-width: 1199px) {
+
+    .flag{
+        position: fixed;
+        top: 0% !important;
+        left: 0%;
+        z-index: 10;
+        width: 140px;
+
+        
+    }
+
+    .flag p{
+        display: none;
+    }
+
+    .dropdown{
+        margin-left: -5px;
+    }
+
+    .dropdown-item{
+        background-color: rebeccapurple;
+        margin-top: -13px;
+        margin-left: -38px;
+    }
+
+}
+
+
+
 
 /*BIO*/
 .bioSection{
