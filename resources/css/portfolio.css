@@ -1,4 +1,8 @@
 
+.flag{
+    z-index: 10 !important;
+}
+
 .portfolioSection {
     margin-top: 3.9vh; /* ennen 6vh*/
     
@@ -40,7 +44,8 @@
     z-index: 1;
     position: absolute;
     margin: 0%;
- 
+
+    right: 28%;
 }
 
 .portfolioContainer {
@@ -156,7 +161,8 @@
     margin-right: 5%;
 
     margin-top: 4px;
-    margin-right: 5px;
+    margin-right: 50px;
+
 }
 
 .audioPlayer {
@@ -276,7 +282,19 @@
     
     margin-bottom: 1px;
     
+    position: relative;
 }
+
+.speaker{
+    background-image: url("../img/img_section_speaker.png");
+    width: 23px;
+    height: 24px;
+    left: 24px;
+    top: 30px;
+    position: absolute;
+   
+}
+
 
 .move {
     transform: translate(-100px);
@@ -299,6 +317,11 @@
 
     min-width: 590px;
     min-width: 550px;
+
+
+    min-width: 650px;
+  
+    min-width: 680px;
 
 }
 
@@ -330,7 +353,7 @@
     position: absolute;
     width: 410px;
     height: 410px;
-    top: 0;
+    top: 40px;
     bottom: 0;
   /*  margin: auto 0;*/
     z-index: 1;
@@ -493,7 +516,7 @@
     border-right: 2px solid #d7d7d7;
     border-bottom: 1px solid #f3f3f3;
 
-    margin-left: 0px; 
+    
 }
 .albumList img {
     position: absolute;
@@ -552,16 +575,69 @@
 }
 /*360 -> 630*/
 @media screen and (min-width:360px) and (max-width:630px){
+
+
+    .portfolioContainer{
+
+    }
+
+    /*first area*/
+    .textContainer{
+
+        width:350px;
+        
+    }
+    .player{
+        width: 350px;
+        margin-left: 11.5%;
+        top: -450px;
+        position: absolute;
+         
+    }
+
+    .audioPlayer{
+        width: 350px;
+        
+    }
+    .songExpContainer{
+
+        width: 350px;
+        margin-left: 11.5%;
+        top: -290px;
+
+        position: absolute;
+  
+    }
+
+    .popOutDiv{
+
+        width: 360px;
+        margin-left: 14%;
+    }
+
+    .songsContainer{
+        top: -30px;
+    }
+
+    /*second area*/
     .albumImg .nowAlbum{
         width: 300px !important; 
+       
+    }
 
+    .albumImg{
+        top: 40px;
 
+        max-height: 390px;
+        min-height: 390px;
+        border: 2px solid pink;
+        
     }
 
     .leftAlbum, .rightAlbum{
         width: 305px;
         height: 270px;
-        top: 110px;
+        top: 60px;
     }
 
 
@@ -574,50 +650,29 @@
     }
 
 
-    .portfolioContainer{
-
-    }
-
-    .textContainer{
-
-        width:350px;
-        
-    }
-    .player{
-        width: 350px;
-        margin-left: 11.5%;
-         
-    }
-
-    .audioPlayer{
-        width: 350px;
-        
-    }
-    .songExpContainer{
-
-        width: 350px;
-        margin-left: 11.5%;
-    }
-
-    .popOutDiv{
-
-        width: 360px;
-        margin-left: 14%;
-    }
-
-    /*second area*/
 
     .albumAbout{
         width: 350px;
+        top: 80px !important;
+      
+        
     }
 
 
     .albumName{
-
-        
+        position: absolute;
+        top: 440px !important;
         min-width: 350px;
+        margin-top: 0;
+        border: 2px solid turquoise;
     }
 
+    .albumList{
+
+        top: -20px;
+        max-width: 300px !important; 
+        position: absolute;
+    }
 
 }
 
@@ -681,7 +736,14 @@
             top: 0; /* Center it vertically */
             left: 50%; /* Center it horizontally */
             transform: translate(-50%); 
+            
 
+        }
+
+        .albumList{
+            width: 490px!important;
+
+            position: absolute;
         }
 }
 
