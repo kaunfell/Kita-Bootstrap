@@ -18,24 +18,20 @@
 
 
 <!-- flag/language -->
-<div class="flag">
-<div class=" btn dropdown language">
 
-  <p class="btn-group bg-transparent  langText" aria-expanded="false">
-    lang.
-  </p>
-      <span class="visually-hidden">Toggle Dropend</span>
 
-      
-    <a data-bs-toggle="dropdown">
-     <img src="resources/img/img_flg_eng.png"  class=""/>
-    </a>
-    <ul class="dropdown-menu  bg-transparent ">
-     <li class="dropdown-item bg-transparent">
-        <img src="resources/img/img_flg_jap.png" class=""/>
-     </li>
-    </ul>
-</div>
+<div class=" flag ">
+    <p class="langText">lang.</p>
+    <div class="dropdown ">
+        <button class="btn  " type="button">
+          <img src="resources/img/img_flg_eng.png" alt="English">
+        </button>
+        <div class="dropdown-menu bg-transparent">
+            <button class="dropdown-item btn"  type="button">
+                <img src="resources/img/img_flg_jap.png" alt="Japanese">
+            </button>
+        </div>
+    </div>
 </div>
 
 
@@ -96,6 +92,8 @@
     <div class=" row ">
       <label for="email" class="form-label col-sm-3  col-5  ">Email address</label>
       <input type="email" class="form-control col-12 col-sm " id="email" placeholder="Enter valid e-mail address" required>
+          <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
     </div>
 
     <div class=" row">
@@ -115,10 +113,16 @@
       <textarea class="form-control col-12 col-sm " id="textFormArea" rows="15" required></textarea>
     </div>
     <div class="text-end">
-    <button type="submit" class="btn btn-transparent "></button>
+    <button type="submit" class="btn btn-transparent " data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
     </div>
     </form>
   </div>
+
+
+
+
+
+
 
 
 
@@ -132,6 +136,14 @@
 </div>
 
 </div > <!--contact section end-->
+
+
+
+
+
+
+
+
 
 
 

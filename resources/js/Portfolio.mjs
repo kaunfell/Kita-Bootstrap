@@ -9,8 +9,8 @@ const albums = {
         {
         id: "realms",
         name: 'Licence Album: Realms',
-        img: "./resources/img/albumi3.png",
-        imgsub: "./resources/img/albumi3sub.png",
+        img: "./resources/img/img_cover_realms.png",
+        imgsub: "./resources/img/img_cover_realms.png",
         explanation: "Cool album. Mus mauris vitae ultricies leo integer malesuada. \
                 Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim.\
                 Habitasse platea dictumst quisque sagittis purus sit. Aliquet eget sit amet tellus cras adipiscing enim. \
@@ -56,8 +56,8 @@ const albums = {
     {
         id: "oracle",
         name: "Oracle Theme",
-        img: "./resources/img/albumi2.png",
-        imgsub:"./resources/img/albumi2sub.png",
+        img: "./resources/img/img_cover_realms.png",
+        imgsub:"./resources/img/img_cover_realms.png",
         explanation: "veery cool album! veery cool album! veery cool album! veery cool album!",
         songs: [
               {  name:"Orrracle song/mecha7",
@@ -93,6 +93,7 @@ const songExp = document.querySelector('.songExp');
 const albumAbout = document.querySelector(".albumAboutP");
 
 const popOutDiv = document.querySelector(".popOutDiv");
+const speaker = document.querySelector(".speaker");
 
 const imgPlace = document.querySelector('.nowAlbum');
 
@@ -136,11 +137,13 @@ albumTitles.forEach(albumTitle => {
 //         FUNCTIONS >>
 //arrow album change
 let currentAlbumIndex = 0;
+
 rightAlbum.src = albums.year["2024"][1].imgsub;
 
 //
 function updateAlbumContent(index) {
     const selectedAlbum = albums.year["2024"][index];
+
     if (selectedAlbum) {
         changeAlbumNames(selectedAlbum);
         rightArrow.style.display = "block";
@@ -148,12 +151,17 @@ function updateAlbumContent(index) {
         
         rightAlbum.style.display = "block";
         leftAlbum.style.display = "none";
+
+
     }
+    
 }
 
 rightArrow.addEventListener('click', () => {
+    TheAlbumName[currentAlbumIndex].style.fontWeight = "normal";
     if (currentAlbumIndex < albums.year["2024"].length - 1) {
         currentAlbumIndex++;
+
         updateAlbumContent(currentAlbumIndex);
         rightArrow.style.display = "none";
         leftArrow.style.display = "block";
@@ -161,16 +169,22 @@ rightArrow.addEventListener('click', () => {
         leftAlbum.style.display = "block";
 
         //rightArrow.classList.add('.rightArrowAnimation');
-        
+    //17.10 test
+    TheAlbumName[currentAlbumIndex].style.fontWeight= "bold";
     }
 
 });
 
 leftArrow.addEventListener('click', () => {
+    TheAlbumName[currentAlbumIndex].style.fontWeight = "normal";
     if (currentAlbumIndex > 0) {
         currentAlbumIndex--;
+
         updateAlbumContent(currentAlbumIndex);
         //rightAlbum.style.display = albums.year["2024"][currentAlbumIndex].imgsub;
+
+                //17.10 test
+                TheAlbumName[currentAlbumIndex].style.fontWeight = "bold";
     }
 });
 //
@@ -181,8 +195,10 @@ leftArrow.addEventListener('click', () => {
 
 //choose and change ALBUM 
 const TheAlbumName = document.querySelectorAll(".TheAlbumName");
+TheAlbumName[0].style.fontWeight= "bold";
 
 TheAlbumName.forEach(alb => {
+
     alb.addEventListener('click', chooseAlbum);
 
 });  
@@ -191,9 +207,12 @@ let previouslyClickedAlbum = null;
 
     function chooseAlbum(event){
         const alb = event.currentTarget;
+        TheAlbumName[0].style.fontWeight= "normal";
 
         if(previouslyClickedAlbum){
+
             previouslyClickedAlbum.style.fontWeight = "normal";
+
         }
         alb.style.fontWeight = "bold";
         previouslyClickedAlbum = alb;
@@ -328,13 +347,21 @@ if (songs.length > 0) {
         
         if(popOutDiv.closest('.songsContainer')){
 
-        
+
         if(previouslyClickedDiv){
             previouslyClickedDiv.style.transform = "translate(0px)";
         }
         
         popOutDiv.style.transform = "translate(-50px)";
         previouslyClickedDiv = popOutDiv;
+
+        popOutDiv.appendChild(speaker);
+
+        let width1 = screen.width;
+
+        if(width1 < 520){
+            popOutDiv.style.transform = "translate(0px)";
+        }
 
     }
 };
