@@ -114,6 +114,12 @@ position: absolute;
     
 }
 
+/*jap flag hidden for now*/
+.dropdown-item img{
+    visibility: hidden;
+}
+
+
 
 /* Nav */
 .nav{
@@ -700,7 +706,7 @@ nav li a::before {
 
 
 
-#textFormArea{
+#question{
     resize: vertical;
     min-height: 200px ;
     max-height: 700px; 
@@ -732,6 +738,11 @@ form button:focus {
     /*outline: 0; try*/
     box-shadow: none;
 }
+
+
+
+
+
 
 @media screen and (max-width: 575px) {
     .form-label{

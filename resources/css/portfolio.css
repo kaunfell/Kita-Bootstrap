@@ -1,3 +1,6 @@
+body, html{
+    position: relative;
+}
 
 .flag{
     z-index: 10 !important;
@@ -677,8 +680,8 @@
 }
 
 
-
-@media screen and (max-width: 1491px) {
+/*1491*/
+@media screen and (max-width: 1631px) {
         .treeIn{
             display: none;
         }
@@ -748,13 +751,17 @@
 }
 
 
-
-@media screen and (max-width: 1578px) {
+/*1578px*/
+@media screen and (max-width: 1830px) {
 
     .portfolioSection{
 
         width: 50% !important;
         width: 40vw !important;
+
+        position: relative;
+        border: 2px solid brown;
+        
     }
 
 
@@ -773,6 +780,16 @@
     .textContainer p{
         
        
+    }
+
+    .tree{
+        border: 2px solid green;
+        bottom:  0px;
+        position: absolute;
+        object-fit: contain;
+    }
+    .treeIn{
+        background-color: pink;
     }
     
 }
