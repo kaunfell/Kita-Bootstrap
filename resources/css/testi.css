@@ -1,0 +1,807 @@
+body, html{
+    position: relative;
+    
+}
+
+.flag{
+    z-index: 10 !important;
+}
+
+.portfolioSection {
+    margin-top: 3.9vh; /* ennen 6vh*/
+    /*
+    height: 100%;
+    min-height: 69vh;
+
+    */
+    min-width: 100%;  
+
+    padding: 0%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    z-index: 15;  
+
+}
+
+
+.portfolioSection h4{
+    font-size: 24.84px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    width: 122px;
+    height: 30px;
+    padding: 0%;
+
+
+    background-image: url("../img/img_section_contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    top: -30px;
+    right: 23%;
+    z-index: 1;
+    position: absolute;
+    margin: 0%;
+
+    right: 28%;
+}
+
+.portfolioContainer {
+
+   /* min-width: 90%;
+    min-height: 680px;
+*/
+min-height: 1300px !important;
+    overflow: auto;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    color: #bababa;
+
+
+
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+
+
+
+   /* min-height: 980px; /*what if there are more songs, should this be higher so it would always be one size*/
+
+    /*height: calc(100vh - 35vh);*/
+    overflow-x: hidden;
+
+    background-color: rebeccapurple;
+    scrollbar-width: none;
+
+
+    margin-left: -170px;
+}
+
+/*First and first items*/
+.first{
+    
+    display: flex;
+    flex-direction: column;
+
+
+    margin: 0%;
+    margin-left: 52px ;
+   
+
+    padding: 0%;
+
+   
+
+    min-width: 500px;
+    max-width: 591px;
+   
+
+    position: relative;
+    
+    
+}
+.player{
+    background-color: #ffffff;
+    position: relative;
+    
+    width: 569px ;
+    width: 475px ;
+
+    
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0%;
+    
+
+    border-left: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    
+    
+    
+}
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* other styles as needed */
+
+
+
+
+    height: 65px;
+    padding-top: 15px;
+
+    width:500px;
+}
+.nowPlayingText {
+    margin-left: 19px;
+
+    font-size: 20.7px;
+    color: #979797;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin-left: 5px !important;
+   
+}
+.songName {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b7b7b7;
+    font-size: 20.7px;
+    margin-right: 4.23%;
+    align-self: flex-end;
+    margin-left: auto;
+    
+}
+.songElements{
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5%;
+
+    margin-top: 4px;
+    margin-right: 50px;
+
+}
+
+.audioPlayer {
+    background-color: #ffffff;
+    
+
+   width: 95%;
+
+}
+ 
+
+.songExpContainer {
+    background-color: #ffffff;
+    text-align: center;
+    
+    width:95%;
+    /*max-width: 559px;*/
+   /*min-height: 250px; */
+   width: 450px ;
+
+    margin-top: 8px;
+    
+    padding: 0;
+    
+    border: 1px solid #d7d7d7;
+
+    min-height: 150px;
+ 
+}
+
+.upperSongExp {
+    position: relative;
+    border: 1px solid #d7d7d7;
+
+}
+.otherSongName {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b7b7b7;
+    
+
+    font-size:  16.4px;
+    
+    margin-bottom: 0px;
+    
+    margin-top: 15px;
+    font-weight: 550;
+
+    
+
+}
+ .adjectives {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b1b1b1;
+    font-size:  14.35px;
+    /*margin-top: 13px;*/
+    padding-bottom: 15px;
+  
+    
+    
+    margin-bottom: 0%;
+    margin-top: 4px;
+}
+
+
+/*.adjectives:not(:last-child){
+    border-bottom: 1px solid #d2d2d2;
+}*/
+.songExp {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    padding-left: 31px;
+    padding-right: 31px;
+    text-align: left;
+    
+    padding-top: 25px;
+
+   
+}
+.songExpContainer img {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+.songsContainer {
+    /*background-color: #ffffff;*/
+    
+    text-align: center;
+
+    width: 90%;
+   
+
+    margin-top: 16px;
+    
+    
+    display: flex;
+    flex-direction: column;
+
+    
+    
+
+    top: 450px;
+    position: absolute;
+    
+   
+
+    
+}
+
+.popOutDiv{
+    
+    background-color: #ffffff;
+    border: 1px solid #d7d7d7;
+    
+    margin-bottom: 1px;
+    
+    position: relative;
+}
+
+.speaker{
+    background-image: url("../img/img_section_speaker.png");
+    width: 23px;
+    height: 24px;
+    left: 24px;
+    top: 30px;
+    position: absolute;
+   
+}
+
+
+.move {
+    transform: translate(-100px);
+  }
+
+
+/*Second and second items*/
+
+.second{
+    
+   /* width: 100%;*/
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    
+
+    min-width: 590px;
+    min-width: 550px;
+
+
+    min-width: 650px;
+  
+    min-width: 680px;
+
+}
+
+.albumImgContainer {
+
+    width: 490px;
+    width: 95%;
+   max-width: 490px;
+
+    height: 490px;
+    text-align: center;
+    margin-top: 15px;
+    
+ 
+    
+    min-width: 500px;
+
+    background-color: #73fa3e;
+    
+    position: relative;
+    background-color: #73fa3e !important; 
+}
+
+.nowAlbum {
+    
+    z-index: 2;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Offset the position by half its width and height to truly center it 
+ 
+
+}
+.leftAlbum, .rightAlbum {
+    position: absolute;
+    width: 410px;
+    height: 410px;
+    top: 40px;
+    bottom: 0;
+  /*  margin: auto 0;*/
+    z-index: 1;
+}
+.leftAlbum {
+    right: 23%; /* Align this image to the left */
+}
+
+.rightAlbum {
+    left: 23%; /* Align this image to the right */
+}
+
+.albumName {
+    
+    margin-top: 20px;
+    background-color: #ffffff;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.63px;
+    min-width: 490px;
+    height: 52px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+    border: 1px solid #d2d2d2;
+
+    padding-top: 10px;
+}
+
+
+
+.albumAbout {
+    position: relative;
+    margin-top: 16px;
+    background-color: #ffffff;
+    width: 490px;
+    min-height: 150px;
+    max-width: 490px;
+    
+    text-align:left;
+
+    border: 1px solid #d2d2d2;
+
+    padding-top: 25px;
+
+    margin-bottom: 30px;
+    min-height: 190px;
+    
+}
+.albumAbout img {
+    position: absolute;
+    top: -6.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+    
+    
+}
+
+.albumAboutP {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  14.49px;
+    
+    
+    text-align: left;
+
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    width: 43px;
+    height: 30px;
+    z-index: 3;
+    left: -11%;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    width: 43px;
+    height: 30px;
+    z-index: 3;
+    right: -11%;
+    
+
+}
+.rightArrow:hover {
+    animation: moveRight 1s ease-in-out infinite;
+}
+.leftArrow:hover {
+    animation: moveLeft 1s ease-in-out infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Move to the right by 15 pixels */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px); /* Move to the right by 15 pixels */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/*Third and third items*/
+.third{
+    flex: 1;
+    
+    max-width: 386px;
+    
+
+    
+}
+
+
+
+
+
+
+.albumList {
+    background-color: #ffffff;
+    text-align: center; 
+    width: 350px;
+    height: 140px;
+    
+    margin-left: 25px; 
+    /*player has extra 30px, so lets add here as well*/
+   /* margin-left: 55px;*/
+
+    margin-top: 55px;
+    position: relative;
+
+    padding: 0px;
+
+
+    border-top: 1px solid #f3f3f3;
+    border-right: 2px solid #d7d7d7;
+    border-bottom: 1px solid #f3f3f3;
+
+    
+}
+.albumList img {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    
+    
+}
+.albumYear {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b7b7b7;
+    font-size: 18.63px;
+    
+    padding-bottom: 9px;
+    margin: auto;
+    width: 25%;
+    align-self: center;
+    margin-bottom: 0px;
+
+    border-bottom: 1px solid #d2d2d2;
+}
+.albumList h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.63px;
+    color: #bababa;
+    margin-top: 16px;
+    
+    margin-bottom: 0px;
+    padding-bottom: 0%;
+
+
+    
+}
+.albumList p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.63px;
+    color: #b7b7b7;
+
+    margin-bottom: 0%;
+    margin-top: 16px;
+    padding-top: 0%;
+    
+
+    
+}
+
+/*Tree*/
+
+
+
+.treeIn{
+
+   min-height: 180px;
+   max-height: 180px;
+
+}
+/*360 -> 630*/
+@media screen and (min-width:360px) and (max-width:630px){
+
+
+    .portfolioContainer{
+
+    }
+
+    /*first area*/
+    .textContainer{
+
+        width:350px;
+        
+    }
+    .player{
+        width: 350px;
+        margin-left: 11.5%;
+        top: -450px;
+        position: absolute;
+         
+    }
+
+    .audioPlayer{
+        width: 350px;
+        
+    }
+    .songExpContainer{
+
+        width: 350px;
+        margin-left: 11.5%;
+        top: -290px;
+
+        position: absolute;
+  
+    }
+
+    .popOutDiv{
+
+        width: 360px;
+        margin-left: 14%;
+    }
+
+    .songsContainer{
+        top: -30px;
+    }
+
+    /*second area*/
+    .albumImg .nowAlbum{
+        width: 300px !important; 
+       
+    }
+
+    .albumImg{
+        top: 40px;
+
+        max-height: 390px;
+        min-height: 390px;
+        border: 2px solid pink;
+        
+    }
+
+    .leftAlbum, .rightAlbum{
+        width: 305px;
+        height: 270px;
+        top: 60px;
+    }
+
+
+
+    .leftArrow{
+        left: 14%;
+    }
+    .rightArrow{
+        right: 16%;
+    }
+
+
+
+    .albumAbout{
+        width: 350px;
+        top: 80px !important;
+      
+        
+    }
+
+
+    .albumName{
+        position: absolute;
+        top: 440px !important;
+        min-width: 350px;
+        margin-top: 0;
+        border: 2px solid turquoise;
+    }
+
+    .albumList{
+
+        top: -20px;
+        max-width: 300px !important; 
+        position: absolute;
+    }
+
+}
+
+
+/*1491*/
+@media screen and (max-width: 1631px) {
+        .treeIn{
+            display: none;
+        }
+
+        .portfolioSection{
+            min-height: 1500px;
+        }
+
+        .portfolioContainer{
+            flex-direction: column;
+            min-height: 2000px;
+            overflow: hidden; 
+
+            justify-content: end;
+            padding: 0;
+            
+        }
+        .first{
+            justify-content: center ;
+            width: 100%;
+           /* min-width: 50px;
+            max-width: 591px;*/
+            min-width: 600px;
+            
+
+            top: 32.5%; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%); 
+
+            max-height: 600px;
+
+
+            
+        }
+        .songsContainer{
+            width: 450px ;
+        }
+
+        .second{
+            top: -28%; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%); 
+
+           
+        }
+
+
+        .third{
+            max-height: 180px !important;
+            padding: 0%;
+            top: 0;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            top: 0; /* Center it vertically */
+            left: 50%; /* Center it horizontally */
+            transform: translate(-50%); 
+            
+
+        }
+
+        .albumList{
+            width: 490px!important;
+
+            position: absolute;
+        }
+}
+
+
+/*1578px*/
+@media screen and (max-width: 1830px) {
+
+    .portfolioSection{
+
+        width: 50% !important;
+        width: 40vw !important;
+
+        position: relative;
+        border: 2px solid brown;
+        
+    }
+
+
+
+    .portfolioContainer{
+
+        position: absolute;
+        margin-left: 1px;
+ 
+    }
+
+    .first{
+
+    }
+
+    .textContainer p{
+        
+       
+    }
+
+    .tree{
+        border: 2px solid green;
+        bottom:  0px;
+        position: absolute;
+        object-fit: contain;
+    }
+    .treeIn{
+        background-color: pink;
+    }
+    
+}

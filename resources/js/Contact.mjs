@@ -18,6 +18,9 @@
         }, false)
       })
   })()*/
+      
+
+
       const serviceID = "service_0acfy3t";
       const templateID = "template_icdvzcd";
       emailjs.init("4Dd8EVBLCuJ4_OKBJ");
@@ -28,9 +31,24 @@
 
 //Sends email
         
+function onSubmit(event, token){
+  
 
-        function checkProperties(event) {
-          event.preventDefault();
+  const form = document.getElementById("myForm");
+  if (!form.checkValidity()) {
+    // If the form is not valid (missing required fields), return and don't proceed
+    form.reportValidity();
+    return;
+  }
+
+  document.getElementById("myForm").submit(); 
+  //checkProperties(event, token)
+
+}
+
+
+        function checkProperties(token) {
+          //event.preventDefault();
 
 
           const remailArea =  document.querySelector("#remail");
@@ -41,6 +59,8 @@
             name : document.querySelector("#nameOrganization").value,
             subject: document.querySelector("#subject").value,
             question: document.querySelector("#question").value,
+            recaptchaToken: token
+
           }
   
 
@@ -61,31 +81,38 @@
                
                 return;
               }
+
           
-          sendMail(event);
-          
+
+          sendMail(params, token)
+
         }
 
-
+/*
+        function onSubmit(token, event) {
+          document.getElementById("myForm").submit();
+          sendMail(event);
+        } */
+        
       //function to emailjs
-      function sendMail(event){
+      function sendMail(params,token){
         //event.preventDefault();
-
+        console.log("Token:"); // Log the token to check if it's passed correctly
+  
+        const submitButton = document.getElementById("submitButton");
         const myModal = new bootstrap.Modal(document.getElementById("myModal"));
 //      emailjs.send(serviceID,templateID, params).then(function(resp){
-        submitButton.style.backgroundColor = "green";
-       
-       myModal.show();
-       
+  submitButton.style.backgroundColor = "green";
+       // document.getElementById("myForm").reset(); 
 
-       document.getElementById("myForm").reset(); 
-    //    }, function(err){
-
-      //    alert("failed");
-        //});
+  
+        document.getElementById("myForm").submit(); 
+        myModal.show();
 
         
+
+
       }
     
-
+    
    

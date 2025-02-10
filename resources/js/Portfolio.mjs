@@ -1,6 +1,7 @@
 // class TheAlbum is in 3 places
 //classTheSong is in 1 places
 
+let space = "\u00A0";
 
 const albums = {
     year:{
@@ -11,7 +12,7 @@ const albums = {
         name: 'Licence Album: Realms',
         img: "./resources/img/albumi.png",
         imgsub: "./resources/img/albumi3sub.png",
-        explanation: "A licensable collection of personal works designed for Japanese RPGs, capturing themes and evoking the memories inspired by classic Japanese RPGs. ",
+        explanation: `This personal project aims to create a collection of licensable music, primarily designed to support and enhance the worlds of Japanese role-playing games. The goal is to offer inspiring and engaging compositions for various in-game moments—filling gaps often left by generic music selections that meet the basic needs of such games. The project is ongoing, with production taking place during available time. The music in this album is my intuitive and inspired take on the genre, influenced by the composers and games of the PS1 era JRPGs, alongside my own personal vision. `,
         songs: [
             {
                 name: 'The Floating Town',
@@ -77,12 +78,12 @@ const albums = {
         name: "Oracle Theme",
         img: "./resources/img/albumi2.png",
         imgsub:"./resources/img/albumi2sub.png",
-        explanation: "veery cool album! veery cool album! veery cool album! veery cool album!",
+        explanation: "Created as a non-commercial commission and personal practice, this piece evokes a mysterious and fairytale-like atmosphere, fitting for an encounter with an oracle. The goal was to enhance the immersive experience of the website oraclewonders.com, evoking a sense of nostalgia for classic video games and capturing the whimsical, enchanting qualities of fairytales and folk tales.",
         songs: [
               {  name:"Orrracle song/mecha7",
                  source: "./resources/music/mecha7.wav",
-                 explanation: "This song is used on oraclewwwww",
-                 adjectives: ['asfsdj1', 'adjektiiive2', 'adj3'],
+                 explanation: "A theme created for an encounter with an old oracle in her cabin, deep within an old forest, evoking a sense of mystery and nostalgia.",
+                 adjectives: ['Mysterious', 'Playful', 'Calm', 'Nostalgic' ],
               }
         ]
     }   
@@ -149,7 +150,7 @@ leftAlbum.style.display = "none";
 
 //albumYears.textContent = albums.year;
 albumTitles.forEach(albumTitle => {
-    albumTitle.innerHTML = defaultAlbum.name; // 
+    albumTitle.textContent = defaultAlbum.name; // 
 });
 
 
@@ -314,9 +315,9 @@ function changeAlbumNames(selectedAlbum){
         
         
         //albumTitle.innerHTML = albums.albums24[0].name;
-        albumTitle.innerHTML = selectedAlbum.name;
+        albumTitle.textContent = selectedAlbum.name;
     });
-        albumAbout.innerHTML = selectedAlbum.explanation;
+        albumAbout.textContent = selectedAlbum.explanation;
         imgPlace.src = selectedAlbum.img;
 
     ChangeSongNames(selectedAlbum.songs);
@@ -327,7 +328,8 @@ function changeAlbumNames(selectedAlbum){
 albumYears.forEach(albumYear => {
 
     const year = albumYear.dataset.year;
-    albumYear.innerHTML = year + ":" + "&nbsp;" ;
+    albumYear.textContent = year + ":" + "\u00A0" ; //&nbsp; unicode space
+    
 
 });
 
@@ -343,13 +345,15 @@ albumYears.forEach(albumYear => {
 // Loop through each songTitle element and update its innerHTML
 function ChangeSongNames(songs){
 
-    songsContainer.innerHTML = "";
+    songsContainer.textContent = "";
 
 songs.forEach(song => {
 
     const popOutDiv = document.createElement("div");
     popOutDiv.classList.add("popOutDiv");
     
+
+
     
     //const songTitle = document.querySelector('.otherSongName').cloneNode(true);
     const songTitle = document.createElement("p");
@@ -396,7 +400,7 @@ if (songs.length > 0) {
         });
         //gives the adjectives and explanation of current song
         TheAdjective.textContent = song.adjectives.join(' - ');
-        songExp.innerHTML = song.explanation;
+        songExp.textContent = song.explanation;
 
 
         //changes the source
@@ -410,6 +414,7 @@ if (songs.length > 0) {
     let previouslyClickedDiv = null;
     
 
+
     function popOut(){
 
         const popOutDiv = event.currentTarget;
@@ -422,17 +427,33 @@ if (songs.length > 0) {
             previouslyClickedDiv.style.transform = "translate(0px)";
         }
        
-        popOutDiv.style.transform = "translate(-50px)";
+        //test
+        
+
+
+
+
 
         previouslyClickedDiv = popOutDiv;
 
         popOutDiv.appendChild(speaker);
 
         let width1 = screen.width;
+ 
 
         if(width1 < 520){
             popOutDiv.style.transform = "translate(0px)";
+            
+        }
+        else{
+            popOutDiv.style.transform = "translate(-50px)";
         }
 
     }
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+        console.log("DOM fully loaded and parsed");
+      });
+
+
 };

@@ -80,20 +80,23 @@
 
    <!-- songs and albums --> 
    <div class="portfolioSection ">    
-        <div class="portfolioContainer  ">
-    <span>
+        <div class="portfolioContainer container  ">
+    <span class="h4">
         <h4>Portfolio</h4>
         
     </span>
 
+<div class="row flex-column flex-xl-row  justify-content-sm-center  align-items-sm-center align-items-xl-start  ">
+    
+<!-- flex-column flex-sm-row order-sm-last order-xl-first  -->
 
-        <div class="first   ">
-            <div class="player">
+        <div class="first   col-4    ">
+            <div class="playerContainer">
                 <div class="textContainer">
                     <p class="nowPlayingText">Now playing:</p>
                     <div class=songElements>
-                    <p  class="TheYear" class="songName" data-year="2024">-</p>
-                    <p  class="TheAlbum" class="songName">-</p> <!--2024: License Album: Realms-->
+                        <p  class="TheYear" class="songName" data-year="2024">-</p>
+                        <p  class="TheAlbum" class="songName">-</p> <!--2024: License Album: Realms-->
                     </div>
                 </div>
                 <audio controls class="audioPlayer">
@@ -119,37 +122,46 @@
                 </div-->
 
         <img class="speaker " src="./resources/img/img_speaker.png" alt="">
-
-            </div>
-                    
+            </div>      
         </div>
 
-        <div class="second   ">
+<!--my-sm-5 my-xl-0  -->
+        <div class="second   col-5 ">
         <!--div class="border border-primary bg-success w-100 allAlbums d-flex justify-content-center container-fluid"-->
-            <div  class="albumImg ">
+            <div  class="albumImgContainer   container">
+            
+            <img class="nowAlbum" src="" alt="album cover">
+
                 <img class="leftArrow" src="./resources/img/img_arrow_L.png" alt="left arrow">
                 <img class="leftAlbum" src="" alt="album cover">
-                <img class="nowAlbum" src="" alt="album cover">
+
                 <img class="rightAlbum" src="" alt="album cover">
                 <img class="rightArrow" src="./resources/img/img_arrow_R.png" alt="right arrow">
+              
             </div>
         <!--/div> <--all albums test-->
-            <div class="albumName">
+            <div class="albumNameContainer ">
                 <p  class=TheYear data-year="2024"></p>
                 <p  class=TheAlbum ></p><!--2024: License Album: Realms-->
             </div>
-            <div class="albumAbout">
+            <div class="albumAboutContainer">
                 <img  src="./resources/img/img_title_about.png" alt="about title">
                 <p class="albumAboutP">--</p>
             </div>
         </div>
         
-        <div class="third ">
+
+        <!--order-sm-first order-xl-last -->
+        <div class="third  col-3  d-flex justify-content-center">
+        <div class="testParent">
+            
+        
             <div class="albumList">
                 <img src="./resources/img/img_title_select.png" alt="select title">
                 <h5 class="albumYear" data-year="2024">2024</h5>
                 <p class="TheAlbumName" data-album-id="realms">Licence Album: Realms</p><!--class=TheAlbum  2024: License Album: Realms-->
                 <p class="TheAlbumName" data-album-id="oracle">Oracle Theme</p> <!-- class=TheSong -->
+            </div>
             </div>
         </div>
 
@@ -159,7 +171,7 @@
         </div> <!-- porfolioContainer end here-->
 
   
-
+</div> <!--row -->
 
 
 
