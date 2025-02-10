@@ -1,33 +1,13 @@
-body, html{
+.portfolioContainer{
+    min-width: 90% !important;    
     position: relative;
-}
-
-.flag{
-    z-index: 10 !important;
-}
-
-.portfolioSection {
-    margin-top: 3.9vh; /* ennen 6vh*/
-    
-    height: 100%;
-    min-height: 69vh;
-    min-width: 100%;
-    
-
-
-    padding: 0%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-    z-index: 15;  
-
+    margin-top: 3.9vh;
 }
 
 
-.portfolioSection h4{
+
+.h4 h4{
+    /*
     font-size: 24.84px;
     font-weight: 400;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,71 +25,47 @@ body, html{
     top: -30px;
     right: 23%;
     z-index: 1;
+    
+    margin: 0%;
+
+    right: 28%;*/
+    font-size: 24.84px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+    width: 122px;
+    height: 30px;
+    padding: 0%;
+
+
+    background-image: url("../img/img_section_contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    top: -30px;
+   /* right: 23% !important;*/
+    z-index: 1;
     position: absolute;
     margin: 0%;
 
-    right: 28%;
+   /* right: 28%;*/
+   right: 23% ;
+
 }
 
-.portfolioContainer {
 
-    min-width: 90%;
-    min-height: 680px;
+/*first*/
 
-    overflow: auto;
-    
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    color: #bababa;
-
-
-
-
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center !important;
-
-
-
-    min-height: 980px; /*what if there are more songs, should this be higher so it would always be one size*/
-    height: calc(100vh - 35vh);
-    overflow-x: hidden;
-    
-
-    margin-left: -170px;
-}
-
-/*First and first items*/
-.first{
-    
-    display: flex;
-    flex-direction: column;
-
-
-    margin: 0%;
-    margin-left: 52px ;
-   
-
-    padding: 0%;
-
-   
-
-    min-width: 500px;
-    max-width: 591px;
-   
-
-    position: relative;
-    
-    
-}
-.player{
+.playerContainer{
     background-color: #ffffff;
     position: relative;
-    
+
+
+    /*    
     width: 569px ;
     width: 475px ;
-
+*/
     
     margin-top: 15px;
     margin-bottom: 0;
@@ -118,10 +74,22 @@ body, html{
 
     border-left: 1px solid #d7d7d7;
     border-top: 1px solid #d7d7d7;
-    
-    
-    
+
+/*    max-width: 475px ; */
+    width: 475px ; 
 }
+
+.audioPlayer {
+    background-color: #ffffff;
+    
+
+   width: 95%;
+   max-width: 475px ; /*testi*/
+   
+}
+
+
+/*in player*/
 .textContainer {
     display: flex;
     flex-direction: row;
@@ -136,8 +104,11 @@ body, html{
     height: 65px;
     padding-top: 15px;
 
-    width:500px;
+    /*width:500px; this */
+    max-width: 475px ; /*testi*/
+    width: 475px;
 }
+
 .nowPlayingText {
     margin-left: 19px;
 
@@ -147,16 +118,9 @@ body, html{
 
     margin-left: 5px !important;
    
-}
-.songName {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #b7b7b7;
-    font-size: 20.7px;
-    margin-right: 4.23%;
-    align-self: flex-end;
-    margin-left: auto;
     
 }
+
 .songElements{
     display: flex;
     flex-direction: row;
@@ -166,25 +130,20 @@ body, html{
     margin-top: 4px;
     margin-right: 50px;
 
+    color: #b7b7b7;
 }
 
-.audioPlayer {
-    background-color: #ffffff;
-    
 
-   width: 95%;
 
-}
- 
 
 .songExpContainer {
     background-color: #ffffff;
     text-align: center;
     
-    width:95%;
+   /*width:95%;*/
     /*max-width: 559px;*/
    /*min-height: 250px; */
-   width: 450px ;
+   /*width: 450px ;   this */
 
     margin-top: 8px;
     
@@ -193,8 +152,10 @@ body, html{
     border: 1px solid #d7d7d7;
 
     min-height: 150px;
- 
+
+    width: 450px ; 
 }
+
 
 .upperSongExp {
     position: relative;
@@ -241,7 +202,7 @@ body, html{
     text-align: left;
     
     padding-top: 25px;
-
+    color: #b1b1b1;
    
 }
 .songExpContainer img {
@@ -252,6 +213,10 @@ body, html{
     margin: auto;
     
 }
+
+
+
+
 
 .songsContainer {
     /*background-color: #ffffff;*/
@@ -267,14 +232,9 @@ body, html{
     display: flex;
     flex-direction: column;
 
-    
-    
 
-    top: 450px;
-    position: absolute;
-    
-   
-
+    /*top: 450px;
+    position: absolute;*/
     
 }
 
@@ -286,6 +246,11 @@ body, html{
     margin-bottom: 1px;
     
     position: relative;
+    width: 450px ; 
+    
+
+
+
 }
 
 .speaker{
@@ -299,100 +264,124 @@ body, html{
 }
 
 
-.move {
-    transform: translate(-100px);
-  }
-
-
-/*Second and second items*/
 
 .second{
+    min-width: 500px; /*helps keep its children at center and other albums on place*/
+
     
-   /* width: 100%;*/
+   
+}
 
 
+/*second*/
+.albumImgContainer{
+
+    position: relative;
+    
+    /* try these off as well*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+    justify-content: center;
 
-    
-
-    min-width: 590px;
-    min-width: 550px;
-
-
-    min-width: 650px;
-  
-    min-width: 680px;
-
-}
-
-.albumImg {
-
-    /*width: 490px;*/
-    width: 95%;
-   max-width: 490px;
-
-    height: 490px;
-    text-align: center;
+   
     margin-top: 15px;
-    
-    position: relative;
-    
-    min-width: 500px;
+    height: 490px;
+
+    min-width: 500px !important;
+    width: 500px;
+    left: 50%; 
+    transform: translate(-50%, 0%);
+
 }
 
-.nowAlbum {
+.nowAlbum{
     z-index: 2;
-    position: absolute;
-    top: 50%; /* Center it vertically */
-    left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Offset the position by half its width and height to truly center it */
- 
+    position: relative;
+
 
 }
+
 .leftAlbum, .rightAlbum {
     position: absolute;
-    width: 410px;
     height: 410px;
+    width: 410px;
     top: 40px;
-    bottom: 0;
-  /*  margin: auto 0;*/
-    z-index: 1;
+
 }
+
+
 .leftAlbum {
-    right: 23%; /* Align this image to the left */
+   /* right: 23%; 
+    right: 35%;*/
+
+    right: 30%;
 }
 
 .rightAlbum {
-    left: 23%; /* Align this image to the right */
+    /*left: 23%; 
+    left: 35%;*/
+
+    /*right: 55px !important; */
+   
+    left: 30%;
 }
 
-.albumName {
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    width: 43px;
+    height: 30px;
+    z-index: 3;
+  /*  left: -11%;
+    left: 8px;*/
+
+    left: 6%;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    width: 43px;
+    height: 30px;
+    z-index: 3;
+
+/*
+    right: -11%;
+    right: 8px;
     
+    right: 5%;
+*/
+right: 6%;
+}
+
+
+.albumNameContainer{
     margin-top: 20px;
     background-color: #ffffff;
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18.63px;
-    min-width: 490px;
+   /* min-width: 490px; test, if its ok off */
     height: 52px;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    
+    color: #b1b1b1;
     
 
     border: 1px solid #d2d2d2;
 
     padding-top: 10px;
+
+    position: relative;
+    width: 490px;
+    left: 50%; 
+    transform: translate(-50%, 0%);
 }
 
 
-
-.albumAbout {
+.albumAboutContainer {
     position: relative;
     margin-top: 16px;
     background-color: #ffffff;
@@ -403,14 +392,21 @@ body, html{
     text-align:left;
 
     border: 1px solid #d2d2d2;
+    color: #b1b1b1;
 
     padding-top: 25px;
 
     margin-bottom: 30px;
     min-height: 190px;
     
+
+    position: relative;
+    width: 490px;
+    left: 50%; 
+    transform: translate(-50%, 0%);
 }
-.albumAbout img {
+
+.albumAboutContainer img {
     position: absolute;
     top: -6.5px;
     left: 0;
@@ -421,6 +417,8 @@ body, html{
     
 }
 
+
+
 .albumAboutP {
     font-family: Arial, Helvetica, sans-serif;
     font-size:  14.49px;
@@ -430,82 +428,25 @@ body, html{
 
     padding-left: 21px;
     padding-right: 21px;
-}
-
-.leftArrow {
-    position: absolute;
-    top: 50%;
-    width: 43px;
-    height: 30px;
-    z-index: 3;
-    left: -11%;
-}
-
-.rightArrow {
-    position: absolute;
-    top: 50%;
-    width: 43px;
-    height: 30px;
-    z-index: 3;
-    right: -11%;
-    
-
-}
-.rightArrow:hover {
-    animation: moveRight 1s ease-in-out infinite;
-}
-.leftArrow:hover {
-    animation: moveLeft 1s ease-in-out infinite;
-}
-
-@keyframes moveRight {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px); /* Move to the right by 15 pixels */
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes moveLeft {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-10px); /* Move to the right by 15 pixels */
-    }
-    100% {
-        transform: translateX(0);
-    }
+   
 }
 
 
+/*third*/
 
-/*Third and third items*/
-.third{
-    flex: 1;
-    
-    max-width: 386px;
-    
-
-    
+.testParent{
+    width: 350px !important; /*helps to keep albumList in this width*/
 }
-
-
-
 
 
 
 .albumList {
     background-color: #ffffff;
     text-align: center; 
-    width: 350px;
+    width: 350px !important;
     height: 140px;
     
-    margin-left: 25px; 
+   /* margin-left: 25px; */
     /*player has extra 30px, so lets add here as well*/
    /* margin-left: 55px;*/
 
@@ -521,13 +462,15 @@ body, html{
 
     
 }
+
 .albumList img {
     position: absolute;
     right: 8px;
     top: 6px;
     
-    
+   
 }
+
 .albumYear {
     font-family: Arial, Helvetica, sans-serif;
     color: #b7b7b7;
@@ -566,230 +509,143 @@ body, html{
     
 }
 
-/*Tree*/
-
-
-
-.treeIn{
-
-   min-height: 180px;
-   max-height: 180px;
-
-}
-/*360 -> 630*/
 @media screen and (min-width:360px) and (max-width:630px){
 
-
     .portfolioContainer{
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    /*first area*/
-    .textContainer{
+        .first{
+            
+        }
 
-        width:350px;
-        
+
+    .playerContainer, .songExpContainer, .songsContainer{
+
+        width: 340px !important;
+
     }
-    .player{
-        width: 350px;
-        margin-left: 11.5%;
-        top: -450px;
-        position: absolute;
-         
-    }
-
-    .audioPlayer{
-        width: 350px;
-        
-    }
-    .songExpContainer{
-
-        width: 350px;
-        margin-left: 11.5%;
-        top: -290px;
-
-        position: absolute;
   
-    }
-
     .popOutDiv{
 
-        width: 360px;
-        margin-left: 14%;
+        width: 340px;
+        
     }
 
-    .songsContainer{
-        top: -30px;
-    }
 
-    /*second area*/
-    .albumImg .nowAlbum{
-        width: 300px !important; 
+
+    /*second*/
+    .second{
        
     }
 
-    .albumImg{
-        top: 40px;
-
-        max-height: 390px;
-        min-height: 390px;
-        border: 2px solid pink;
+    .albumImgContainer{
+        width: 100% !important;
+        height: 100%;
         
-    }
+        left: 50%; 
+        transform: translate(-50%, 0%);
 
+    }
+    .nowAlbum{
+        width: 55%;
+        height: 55%;
+
+        
+       
+    }
     .leftAlbum, .rightAlbum{
-        width: 305px;
-        height: 270px;
-        top: 60px;
+        width: 50%;
+        height: 69%;
+    }
+
+    .rightAlbum{
+        left: 150px !important; 
+   
+    }
+    .leftAlbum{
+        right: 150px !important;
     }
 
 
-
-    .leftArrow{
-        left: 14%;
-    }
     .rightArrow{
-        right: 16%;
+        right: 75px !important;
+    }
+    .leftArrow{
+        left: 75px !important;
     }
 
 
 
-    .albumAbout{
-        width: 350px;
-        top: 80px !important;
-      
-        
+    .albumAboutContainer{
+        width: 70%;
     }
-
-
-    .albumName{
-        position: absolute;
-        top: 440px !important;
-        min-width: 350px;
-        margin-top: 0;
-        border: 2px solid turquoise;
-    }
-
-    .albumList{
-
-        top: -20px;
-        max-width: 300px !important; 
-        position: absolute;
+    .albumNameContainer{
+        max-width: 70% !important;
+    
     }
 
 }
 
 
-/*1491*/
+
+
+
+
+
+
+
 @media screen and (max-width: 1631px) {
-        .treeIn{
-            display: none;
-        }
 
-        .portfolioSection{
-            min-height: 1500px;
-        }
+    .portfolioContainer .row{
+        flex-direction: column !important;
 
-        .portfolioContainer{
-            flex-direction: column;
-            min-height: 2000px;
-            overflow: hidden; 
-
-            justify-content: end;
-            padding: 0;
-            
-        }
-        .first{
-            justify-content: center ;
-            width: 100%;
-           /* min-width: 50px;
-            max-width: 591px;*/
-            min-width: 600px;
-            
-
-            top: 32.5%; /* Center it vertically */
-            left: 50%; /* Center it horizontally */
-            transform: translate(-50%); 
-
-            max-height: 600px;
-
-
-            
-        }
-        .songsContainer{
-            width: 450px ;
-        }
-
-        .second{
-            top: -28%; /* Center it vertically */
-            left: 50%; /* Center it horizontally */
-            transform: translate(-50%); 
-
-           
-        }
-
-
-        .third{
-            max-height: 180px !important;
-            padding: 0%;
-            top: 0;
-            position: absolute;
-            justify-content: center;
-            display: flex;
-            top: 0; /* Center it vertically */
-            left: 50%; /* Center it horizontally */
-            transform: translate(-50%); 
-            
-
-        }
-
-        .albumList{
-            width: 490px!important;
-
-            position: absolute;
-        }
-}
-
-
-/*1578px*/
-@media screen and (max-width: 1830px) {
-
-    .portfolioSection{
-
-        width: 50% !important;
-        width: 40vw !important;
-
-        position: relative;
-        border: 2px solid brown;
-        
-    }
-
-
-
-    .portfolioContainer{
-
-        position: absolute;
-        margin-left: 1px;
- 
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .first{
+        order: 3;
+
+
+
 
     }
-
-    .textContainer p{
-        
-       
+    .playerContainer, .songExpContainer, .songsContainer{
+        position: relative;
+        width: 490px;
+        left: 50%; 
+        transform: translate(-50%, 0%);
     }
 
-    .tree{
-        border: 2px solid green;
-        bottom:  0px;
-        position: absolute;
-        object-fit: contain;
+    .second{
+       order: 2;
+       margin-bottom: 20px !important;
+       padding-right: 0px !important;
     }
-    .treeIn{
-        background-color: pink;
+
+
+    .rightArrow{
+        right: -55px;
     }
-    
+    .leftArrow{
+        left: -55px;
+    }
+
+    .rightAlbum{
+        left: 25%;
+    }
+    .leftAlbum{
+        right: 25%;
+    }
+
+
+
+    .third{
+        order: 1;
+        margin-bottom: 20px !important;
+    }
 }

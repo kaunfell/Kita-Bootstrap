@@ -1,5 +1,5 @@
 body, html{
-    background-image: url("../img/img_BG.png") !important;
+    background-image: url("../img/img_BG2.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -255,7 +255,11 @@ nav li a::before {
 }
 
 
-
+.newsContainer .row{
+    background-color: #ffffff !important;
+    margin-bottom: 20px ;
+    padding-right: 30px !important;
+}
 
 
 .newsContainer{
@@ -263,12 +267,12 @@ nav li a::before {
     font-size: 18.63px;
     color: #bababa;
 
-    background-color: #ffffff;
+   /* background-color: #ffffff;*/
     opacity: 0.77;
 
     position: relative;
 
-    margin-top: 6vh;
+    margin-top: 3.9vh;
 
 
    
@@ -298,14 +302,18 @@ nav li a::before {
 
     margin: 0;
 
-    
+    /*test*/
+    min-width: 60px;
+
+
+
+  
 }
 
 .date{
     padding-top: 17px;
     text-align: right;
-   
-    
+
 }
 
 .month, .year{
@@ -358,6 +366,10 @@ nav li a::before {
 
 
     }
+    body, html{
+        background-image: none !important;
+        background-color: white;
+    }
 }
 
 
@@ -397,6 +409,11 @@ nav li a::before {
 
         text-align: left;
 
+    }
+
+    body, html{
+        background-image: none !important;
+        background-color: white;
     }
 }
 
@@ -757,5 +774,13 @@ form button:focus {
         
     }
 
+
+}
+
+
+
+/*test for news box*/
+
+@media screen and (min-width: 992px) and (max-width: 1642px){
 
 }
