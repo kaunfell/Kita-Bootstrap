@@ -377,8 +377,12 @@ songs.forEach(song => {
     
     //first song is popped out with speaker
     const firstPopOutDiv = songsContainer.firstElementChild;
+    let width1 = window.innerWidth; // screen.width 
 
-    if (firstPopOutDiv) {
+    if(width1 < 520){
+        firstPopOutDiv.style.transform = "translate(0px)";
+        firstPopOutDiv.appendChild(speaker);
+    } else     if (firstPopOutDiv) {
         firstPopOutDiv.style.transform = "translate(-50px)";
         firstPopOutDiv.appendChild(speaker);
         previouslyClickedDiv = firstPopOutDiv; 
@@ -412,8 +416,29 @@ if (songs.length > 0) {
     }
 
     let previouslyClickedDiv = null;
-    
 
+    //testi
+    let width1 = window.innerWidth;
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+
+        console.log("testi")
+
+        if(width1 < 520){
+            popOutDiv.style.transform = "translate(0px)";
+            popOutDiv.style.backgroundColor = "red"
+        }
+      });
+
+      window.onresize = function(){
+        console.log("testi2")
+
+        if(width1 < 520){
+            popOutDiv.style.transform = "translate(0px)";
+            popOutDiv.style.backgroundColor = "red"
+        }
+      }
+//testi up
 
     function popOut(){
 
@@ -438,7 +463,7 @@ if (songs.length > 0) {
 
         popOutDiv.appendChild(speaker);
 
-        let width1 = screen.width;
+        let width1 = window.innerWidth; //screen.width
  
 
         if(width1 < 520){
@@ -451,9 +476,7 @@ if (songs.length > 0) {
 
     }
 
-    document.addEventListener("DOMContentLoaded", (event) => {
-        console.log("DOM fully loaded and parsed");
-      });
+
 
 
 };
