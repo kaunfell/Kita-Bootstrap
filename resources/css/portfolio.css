@@ -1,5 +1,5 @@
 .portfolioContainer{
-    min-width: 90% !important;    
+    min-width: 90% !important;    /* important*/
     position: relative;
     margin-top: 3.9vh;
 }
@@ -444,7 +444,7 @@ right: 6%;
     background-color: #ffffff;
     text-align: center; 
     width: 350px !important;
-    height: 140px;
+    height: 140px;  /*needs to be adjusted when more years*/
     
    /* margin-left: 25px; */
     /*player has extra 30px, so lets add here as well*/
@@ -509,6 +509,40 @@ right: 6%;
     
 }
 
+
+
+.treePortfolio {
+
+    
+    width: 100%;
+ 
+
+    /*maybe min-height: 180px;*/
+    
+    min-height: 180px;
+    flex: 1;
+    
+      
+}
+
+.treeInPortfolio{
+    background-image:url('../img/img_footer_tree.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    height: 180px;
+   
+
+}
+
+
+
+
+
+
+/*media queries*/
+
 @media screen and (min-width:360px) and (max-width:630px){
 
     .portfolioContainer{
@@ -520,6 +554,7 @@ right: 6%;
         .first{
             
         }
+
 
 
     .playerContainer, .songExpContainer, .songsContainer{
@@ -614,6 +649,12 @@ right: 6%;
 
 
     }
+
+    .h4 h4{
+        right: 5% ;
+    }
+
+
     .playerContainer, .songExpContainer, .songsContainer{
         position: relative;
         width: 490px;
@@ -648,4 +689,38 @@ right: 6%;
         order: 1;
         margin-bottom: 20px !important;
     }
+}
+
+
+@media screen and (min-width: 1921px) {
+    .h4 h4{
+        right: 25% ;
+    }
+
+
+    .portfolioContainer{
+        
+     
+    }
+
+    .first{
+        min-width: 500px !important;
+        max-width: 550px !important;
+    }
+
+    .second{
+
+       /* max-width: 650px !important;  helps the first to be more center with specific px in second*/
+       max-width: 650px !important;
+    }
+
+    .rightArrow{
+        right: 0px;
+    }
+    .leftArrow{
+        left: 0px;
+    }
+
+
+
 }
