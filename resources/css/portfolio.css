@@ -56,6 +56,10 @@
 
 
 /*first*/
+.first{
+    /*test*/
+    position: relative;
+}
 
 .playerContainer{
     background-color: #ffffff;
@@ -134,7 +138,11 @@
 }
 
 
-
+/*this is invisible box that helps to keep songs at certain point without putting them position absolute*/
+.SongParent{
+    height: 280px; 
+  
+}
 
 .songExpContainer {
     background-color: #ffffff;
@@ -153,7 +161,11 @@
 
     min-height: 150px;
 
+
+
     width: 450px ; 
+    
+    
 }
 
 
@@ -217,7 +229,6 @@
 
 
 
-
 .songsContainer {
     /*background-color: #ffffff;*/
     
@@ -233,8 +244,13 @@
     flex-direction: column;
 
 
-    /*top: 450px;
-    position: absolute;*/
+    /*test*/
+   
+
+
+    
+    
+
     
 }
 
@@ -378,6 +394,7 @@ right: 6%;
     width: 490px;
     left: 50%; 
     transform: translate(-50%, 0%);
+    
 }
 
 
@@ -521,8 +538,11 @@ right: 6%;
     
     min-height: 180px;
     flex: 1;
+
+
     
-      
+
+    bottom: 0px;  
 }
 
 .treeInPortfolio{
@@ -533,6 +553,7 @@ right: 6%;
 
     height: 180px;
    
+
 
 }
 
@@ -568,11 +589,22 @@ right: 6%;
         width: 340px;
         
     }
+    .nowPlayingText{
+     
+        font-size: 18.7px;
+    }
+    .songElements{ /*unsure of this approach, other way to put margin-right: 120px, any other?*/
+       position: absolute;
+       right: -50px;
+       
+    }
 
 
 
-    /*second*/
+    /*second */
     .second{
+
+        
        
     }
 
@@ -580,9 +612,9 @@ right: 6%;
         width: 100% !important;
         height: 100%;
         
-        left: 50%; 
-        transform: translate(-50%, 0%);
-
+       /* left: 50%; 
+        transform: translate(-50%, 0%);*/
+        margin-left: -5px !important;
     }
     .nowAlbum{
         width: 55%;
@@ -616,10 +648,16 @@ right: 6%;
 
     .albumAboutContainer{
         width: 70%;
+
+        margin-left: -5px;
     }
     .albumNameContainer{
         max-width: 70% !important;
-    
+
+        margin-left: -5px;
+        
+
+
     }
 
 }

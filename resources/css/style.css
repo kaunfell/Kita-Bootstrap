@@ -258,7 +258,8 @@ nav li a::before {
 .newsContainer .row{
     background-color: #ffffff !important;
     margin-bottom: 20px ;
-    padding-right: 30px !important;
+   /* padding-right: 30px !important;*/
+
 }
 
 
@@ -301,11 +302,13 @@ nav li a::before {
     align-items: flex-end;
 
     margin: 0;
+    
 
     /*test*/
     min-width: 60px;
 
-
+    /*test */
+ 
 
   
 }
@@ -313,7 +316,7 @@ nav li a::before {
 .date{
     padding-top: 17px;
     text-align: right;
-
+   
 }
 
 .month, .year{
@@ -370,12 +373,13 @@ nav li a::before {
         background-image: none !important;
         background-color: white;
     }
+
 }
 
 
+/*was before max-width: 562px*/
 
-
-@media screen and (min-width: 360px) and (max-width: 562px) {
+@media screen and (min-width: 360px) and (max-width: 626px) {
     .nav-item{
 
         margin: auto;
@@ -410,6 +414,30 @@ nav li a::before {
         text-align: left;
 
     }
+    .dateContainer{
+        width: 30px;
+        align-items: flex-start;
+       
+    }
+
+    .newsContainer{
+     
+        padding: 0px !important;
+        
+
+    }
+
+    .onePost{
+      
+        width: 100% !important;
+        font-size: smaller;
+        line-height: 1.6;
+        
+        margin-left: 5%;
+      
+    }
+
+
 
     body, html{
         background-image: none !important;
@@ -445,6 +473,12 @@ nav li a::before {
        
    
     }
+    .newsContainer .row{
+
+        padding-right: 35px !important;
+       
+        
+        }
 
 }
 
@@ -478,7 +512,15 @@ nav li a::before {
 
 }
 
+/*test*/
+@media screen and (min-width: 765px) and (max-width: 992px){
+    .newsContainer .row{
 
+    padding-right: 43px !important;
+   
+    
+    }
+}
 
 /*BS breakpoint under*/
 @media  screen and (max-width: 1199px) {
@@ -600,7 +642,7 @@ nav li a::before {
 .firstCol p{
     margin-left: 25px;
     margin-top: 18px;
-  
+    font-size: 18.63px;
 }
 
 .secondCol img{
@@ -611,7 +653,8 @@ nav li a::before {
 
 
    
-    margin-top: 15vh;
+   /* margin-top: 15vh;*/
+   margin-top: 18px;
 
 }
 
@@ -669,7 +712,7 @@ nav li a::before {
 }
 
 
-.contactContainer .post{
+.contactContainer .onePost{ /*was just post*/
     font-size: 18.63px;
     line-height: 1.3;
     color: #bababa;
