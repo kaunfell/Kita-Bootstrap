@@ -10,9 +10,9 @@ const albums = {
         {
         id: "realms",
         name: 'Licence Album: Realms',
-        img: "./resources/img/albumi.png",
-        imgsub: "./resources/img/albumi3sub.png",
-        explanation: `This personal project aims to create a collection of licensable music, primarily designed to support and enhance the worlds of Japanese role-playing games. The goal is to offer inspiring and engaging compositions for various in-game moments—filling gaps often left by generic music selections that meet the basic needs of such games. The project is ongoing, with production taking place during available time. The music in this album is my intuitive and inspired take on the genre, influenced by the composers and games of the PS1 era JRPGs, alongside my own personal vision. `,
+        img: "./resources/img/album1.png",
+        imgsub: "./resources/img/album1sub.png",
+        explanation: `This personal project aims to create a collection of licensable music, primarily designed to support and enhance the worlds of Japanese role-playing games. The goal is to offer inspiring and engaging compositions for various in-game moments—filling gaps often left by generic music selections that meet the basic needs of such games. ${'\xa0'.repeat(150)} The project is ongoing, with production taking place during available time. The music in this album is my intuitive and inspired take on the genre, influenced by the composers and games of the PS1 era JRPGs, alongside my own personal vision. `,
         songs: [
             {
                 name: 'The Floating Town',
@@ -76,8 +76,8 @@ const albums = {
     {
         id: "oracle",
         name: "Oracle Theme",
-        img: "./resources/img/albumi2.png",
-        imgsub:"./resources/img/albumi2sub.png",
+        img: "./resources/img/album2.png",
+        imgsub:"./resources/img/album2sub.png",
         explanation: "Created as a non-commercial commission and personal practice, this piece evokes a mysterious and fairytale-like atmosphere, fitting for an encounter with an oracle. The goal was to enhance the immersive experience of the website oraclewonders.com, evoking a sense of nostalgia for classic video games and capturing the whimsical, enchanting qualities of fairytales and folk tales.",
         songs: [
               {  name:"Orrracle song/mecha7",

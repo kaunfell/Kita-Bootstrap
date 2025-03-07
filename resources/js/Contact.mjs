@@ -31,18 +31,19 @@
 
 //Sends email
         
-function onSubmit(event, token){
-  
+function onSubmit(event){
+  event.preventDefault();
 
+  //check if inputs are filled
   const form = document.getElementById("myForm");
   if (!form.checkValidity()) {
-    // If the form is not valid (missing required fields), return and don't proceed
+   
     form.reportValidity();
     return;
   }
 
-  document.getElementById("myForm").submit(); 
-  //checkProperties(event, token)
+  //document.getElementById("myForm").submit(); 
+  
 
 }
 
