@@ -248,10 +248,11 @@ nav li a::before {
     position: relative;
 
 
-              height:calc(100vh - 35vh); /* Full height of the viewport */
-            display: flex;
-            flex-direction: column;
+    height:calc(100vh - 35vh); /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
 
+   
 }
 
 
@@ -259,6 +260,7 @@ nav li a::before {
     background-color: #ffffff !important;
     margin-bottom: 20px ;
    /* padding-right: 30px !important;*/
+
 
 }
 
@@ -273,8 +275,9 @@ nav li a::before {
 
     position: relative;
 
+   
     margin-top: 3.9vh;
-
+   
 
    
 }
@@ -615,6 +618,9 @@ nav li a::before {
     line-height: 1.5;
 
     position: relative;
+
+    
+    
 }
 
 .bioContainer span h4{
@@ -658,7 +664,10 @@ nav li a::before {
 
 }
 
-
+.Credits{
+    font-size: 18.63px;
+    text-align: center;
+}
 
 
 
