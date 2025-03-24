@@ -10,57 +10,57 @@ const albums = {
         {
         id: "realms",
         name: 'Licence Album: Realms',
-        img: "./resources/img/album1.png",
-        imgsub: "./resources/img/album1sub.png",
+        img: "./resources/img/img_cover_realms.png",
+        imgsub: "./resources/img/img_cover_blank.png",
         explanation: `This personal project aims to create a collection of licensable music, primarily designed to support and enhance the worlds of Japanese role-playing games. The goal is to offer inspiring and engaging compositions for various in-game moments—filling gaps often left by generic music selections that meet the basic needs of such games. ${'\xa0'.repeat(150)} The project is ongoing, with production taking place during available time. The music in this album is my intuitive and inspired take on the genre, influenced by the composers and games of the PS1 era JRPGs, alongside my own personal vision. `,
         songs: [
             {
                 name: 'The Floating Town',
-                source: "./resources/music/mecha1.wav",
+                source: "./resources/music/prev_Floating_Town.wav",
                 adjectives: ['Calm', 'Oriental', 'RPG'],
                 explanation: "A calm, water-themed song for an oriental floating town, inspired by an image of a settlement built atop boats and colorful traditional clothing. The plucking movements mimic the sounds of water surface collisions. \
                   "
             },
             {
                 name: 'Green Eternal',
-                source: "./resources/music/mecha2.wav",
+                source: "./resources/music/prev_Green_Eternal.wav",
                 adjectives: ['Calm', 'Somber', 'Mysterious', 'RPG' ],
                 explanation: "A theme for a deep and ancient fantasy forest. This piece is one of my personal favorites, evoking childhood memories of JRPGs and their mysterious escapism."
 
             },
             { 
                 name: 'Race to the Finish',
-                source: "./resources/music/mecha3.wav",
+                source: "./resources/music/prev_Race_to_the_Finish.wav",
                 adjectives: ['Energetic', 'Bouncy', 'Exciting', 'Racing'],
                 explanation: "An energetic racing theme inspired by racing minigame instances. The song incorporates elements of samba and big band rock, featuring fun sound effects like fireworks and monkeys."
             },
             {
                 name: 'The Desert Bastion',
-                source: "./resources/music/mecha4.wav",
+                source: "./resources/music/prev_The_Desert_Bastion.wav",
                 adjectives: ['Stoic', 'Militant', 'Exotic', 'RPG'],
                 explanation: "A theme for a desolate fortress in a dry, desert fantasy setting. I find composing for desert and tropical settings particularly inspiring! "
             },
             {
                 name: 'Humble Fortifications',
-                source: "./resources/music/mecha6.wav",
+                source: "./resources/music/prev_Humble_Fortifications.wav",
                 adjectives: ['Homely', 'Simple', 'Rustic', 'RPG'],
                 explanation: "A home base theme conveying warmth and simplicity, inspired by a rustic RPG fortress setting."
             },
             {
                 name: 'Ambush on the Mad Monarch',
-                source: "./resources/music/mecha6.wav",
+                source: "./resources/music/prev_Ambush.wav",
                 adjectives: ['Dark', 'Tense', 'Eerie', 'RPG'],
                 explanation: "A tense RPG battle or event theme for a face-off against a villain. Inspired by classic RPGs, it features dynamic percussive sections for added intensity."
             },
             {
                 name: 'Far Below the Clouds',
-                source: "./resources/music/mecha6.wav",
+                source: "./resources/music/prev_Far_Below_the_Clouds.wav",
                 adjectives: ['Adventurous', 'Grand', 'RPG'],
                 explanation: "A world map theme for an RPG overworld map with a bird's-eye view perspective."
             },
             {
                 name: 'The Scarlet Hunter - Liturgy of Blood',
-                source: "./resources/music/mecha6.wav",
+                source: "./resources/music/prev_The_Scarlet_Hunter.wav",
                 adjectives: ['Vampiric', 'Gothic', 'Dark'],
                 explanation: "An RPG battle theme for a confrontation with a vampire hunter, drawing inspiration from the thematic hues of scarlet red and gold."
             },
@@ -76,8 +76,8 @@ const albums = {
     {
         id: "oracle",
         name: "Oracle Theme",
-        img: "./resources/img/album2.png",
-        imgsub:"./resources/img/album2sub.png",
+        img: "./resources/img/img_cover_oracle.png",
+        imgsub:"./resources/img/img_cover_blank.png",
         explanation: "Created as a non-commercial commission and personal practice, this piece evokes a mysterious and fairytale-like atmosphere, fitting for an encounter with an oracle. The goal was to enhance the immersive experience of the website oraclewonders.com, evoking a sense of nostalgia for classic video games and capturing the whimsical, enchanting qualities of fairytales and folk tales.",
         songs: [
               {  name:"Orrracle song/mecha7",
@@ -379,7 +379,8 @@ songs.forEach(song => {
     const firstPopOutDiv = songsContainer.firstElementChild;
     let width1 = window.innerWidth; // screen.width 
 
-    if(width1 < 520){
+    //changed 520 to 500
+    if(width1 < 500){
         firstPopOutDiv.style.transform = "translate(0px)";
         firstPopOutDiv.appendChild(speaker);
     } else     if (firstPopOutDiv) {
@@ -417,14 +418,14 @@ if (songs.length > 0) {
 
     let previouslyClickedDiv = null;
 
-    //testi
+   /* //testi
     let width1 = window.innerWidth;
 
     document.addEventListener("DOMContentLoaded", (event) => {
 
         console.log("testi")
 
-        if(width1 < 520){
+        if(width1 < 500){
             popOutDiv.style.transform = "translate(0px)";
             popOutDiv.style.backgroundColor = "red"
         }
@@ -433,12 +434,12 @@ if (songs.length > 0) {
       window.onresize = function(){
         console.log("testi2")
 
-        if(width1 < 520){
+        if(width1 < 500){
             popOutDiv.style.transform = "translate(0px)";
             popOutDiv.style.backgroundColor = "red"
         }
       }
-//testi up
+//testi up*/
 
     function popOut(){
 
@@ -454,6 +455,10 @@ if (songs.length > 0) {
        
         //test
         
+        //test 21.3.25, lol it works just like that
+        audioPlayer.play();
+
+        
 
 
 
@@ -465,8 +470,8 @@ if (songs.length > 0) {
 
         let width1 = window.innerWidth; //screen.width
  
-
-        if(width1 < 520){
+        //changed from 520 to 500
+        if(width1 < 500){
             popOutDiv.style.transform = "translate(0px)";
             
         }
